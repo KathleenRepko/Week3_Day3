@@ -8,13 +8,13 @@ namespace Week3_Day3
 {
     class Vehicle
     {
-        private int seats;
-        private int carryingCapacity;
-        private string color;
-        private double movementSpeed;
+        protected int seats;
+        protected int carryingCapacity;
+        protected string color;
+        protected double movementSpeed;
         private float gearRatio;
         private float engineSize;
-        private double distanceTraveled;
+        protected double distanceTraveled;
 
 
         public int Seats
@@ -54,7 +54,7 @@ namespace Week3_Day3
         }
 
 
-        public void Move()
+        public virtual void Move()
         {
             //distanceTraveled = distanceTraveled + movementSpeed; OR:
             distanceTraveled += movementSpeed;
