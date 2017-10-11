@@ -10,6 +10,13 @@ namespace Week3_Day3
     {
         static void Main(string[] args)
         {
+            Vehicle baseVehicle = new Vehicle(4, 2000, "Green", 55.0d);
+
+            baseVehicle.Move();
+            baseVehicle.Move();
+            Console.WriteLine(baseVehicle.DistanceTraveled);
+
+
         }
     }
 }
